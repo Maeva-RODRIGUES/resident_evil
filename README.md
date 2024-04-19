@@ -11,7 +11,7 @@ Création d'une page web statique basée sur une maquette de "Resident Evil 4", 
 
 ## 🛠️ Outils
 
-- ![Logo de VS Code](./assets/img/icons8-code-studio-visuel-2019-50.png)
+- ![Logo de VS Code](./asset/image/icons8-code-studio-visuel-2019-50.png)
 
 ## 📷 Captures d’écran
 ![Screenshot](./asset/image/Screenshot.PNG)
