@@ -1,0 +1,330 @@
+/* @REGLES CSS */
+@font-face {
+    font-family: "Roboto" ;
+    src: url(../font/Roboto-Black.ttf);
+}
+/* CSS GLOBAL */
+body {
+    font-family: "Roboto Regular" ;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+ul {
+    list-style: none;
+}
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+#banner {
+    background-image: url(../image/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 9rem 0;
+    color: white;
+    text-align: center;
+}
+#banner h1 {
+    font-family: "Roboto Bold";
+    font-size: 50px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.btn {
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color:rgba(192,25,42,255);
+    color: white;
+}
+.main-menu a {
+    color: rgba(41,43,44,255);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* DEBUT NAV BAR */
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 25px 0;
+}
+.main-menu a {
+    padding: 1px 13px;
+}
+.bar {
+    border-left: 2px solid black
+}
+/* FIN NAV BAR */
+
+/* SECTION => BANNIERE */
+.logo {
+  width: 500px;
+  height: 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.logo img {
+  width: 200%;
+  height: 200%;
+}
+/* SECTION => MEDIUM TEXT*/
+#survivez {
+    padding: 3% 0%;
+    text-align: center   
+}
+/* SECTION => GRILLE*/
+#actualités {
+    display: flex;
+    justify-content: center;
+}
+.resident {
+    padding: 2rem 1rem;
+    padding-bottom: 2rem ;
+    position: relative;
+    
+}
+.resident .content {
+    background-color: rgba(40,39,37,255);
+    color: white;
+    padding: 1rem;
+    width: 400px;
+    height: 200px;
+}
+.resident .img-container {
+    width: 100%;
+    height: 200px;
+}
+.resident .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* SECTION => PRE-FOOTER */
+#pre-footer {
+    background-color: rgba(41,43,44,255);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+}
+#pre-footer h2 {
+    margin: 0;
+    text-transform: uppercase;
+}
+/* END OF SITE || FOOTER */
+footer {
+    background-color: rgba(0,0,0,255);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+/* NAV BAR FOOTER */
+.menu-bas {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px 0;
+    padding-right: 17rem;
+}
+.menu-bas a {
+    color: white;
+    font-size: small;
+    margin: 0 10px;
+}
+.trait {
+    border-left: 2px solid white;
+}
+
+#logobas {
+   display: flex;    
+}
+.petitlogo {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.petitlogo img {
+    width: 100%;
+    height: 20%;
+}
+
+/* ANIMATIONS */
+.main-menu a:hover {
+    color: red; 
+    transition: color 0.3s ease; 
+}
+.btn:hover {
+    background-color:rgba(0,0,0,255); 
+    transition: background-color 0.3s ease; 
+}
+.menu-bas a:hover {
+    color: red; 
+    transition: color 0.3s ease; 
+}
+
+.resident :hover{
+        box-shadow: 4px 4px 0px black;
+        transform: translate(-4px, -4px);
+}
+
+ /* RESPONSIVE */
+ @media screen and (max-width: 992px) {
+    #actualites .resident {
+        width: 30%;
+        margin: 1rem;
+    }
+}
+
+ @media screen and (max-width: 436px) {
+
+    /* Pour le logo */
+    .logo {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .logo img {
+        width: 100%; 
+        height: auto; 
+    }
+    
+    /* Pour la barre de navigation du haut*/
+    header .main-menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem; 
+    }
+    .main-menu a {
+        padding: 1rem;
+    }
+    
+   .bar {
+    border-left: none;
+   }
+
+    /* Pour les actualités */
+    #actualités {
+        flex-direction: column; 
+    }
+
+    /* Pour resident */
+    .resident {
+        padding: 1rem 0; 
+
+    .resident .content {
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 1rem; 
+    }
+
+    /* Pour le pré-footer */
+    #pre-footer {
+        padding: 1rem; 
+    }
+    input {
+        width: 100%; /
+    }
+    
+    /* Pour le footer */
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* Pour le menu du footer */
+
+    .menu-bas {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem; 
+    }
+    .menu-bas li {
+        padding: 1rem;
+    }
+    .trait a {
+        border-left: none;
+    }
+   
+
+    /* Pour le logo du footer */
+
+    #logobas {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .petitlogo {
+        margin-bottom: 10px; 
+    }
+}}
+
+@media screen and (max-width: 433px) {
+    /* Pour le logo */
+    .logo {
+        width: 100%; 
+        height: auto;
+    }
+
+    .logo img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    /* Pour resident */
+    .resident {
+        padding: 1rem 0; 
+
+    .resident .content {
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 1rem; 
+    }
+}
+}
+
+@media screen and (max-width: 400px) {
+    /* Pour le logo */
+    .logo {
+        width: 100%; 
+        height: auto;
+    }
+
+    .logo img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    /* Pour resident */
+
+    .resident {
+        padding: 1rem 0; 
+
+    .resident .content {
+        width: 300px; 
+        height: 100px; 
+        margin-bottom: 1rem; 
+        display: flex;
+    }
+}
+}
+    
+
+
+
+
+
