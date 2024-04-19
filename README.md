@@ -17,4 +17,4 @@ Création d'une page web statique basée sur une maquette de "Resident Evil 4", 
 ![Screenshot](./asset/image/Screenshot.PNG)
 
 ## 🔗 Liens vers la démo
-
+https://maeva-rodrigues.github.io/resident_evil/
